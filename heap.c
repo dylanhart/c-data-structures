@@ -18,7 +18,7 @@ Heap* heap_default(Comparator comp) {
 
 void* heap_peek(Heap* h) {
 	// return top item
-	if (h->size > 0)
+	if (h->count > 0)
 		return h->tree[0];
 	else
 		return NULL;
